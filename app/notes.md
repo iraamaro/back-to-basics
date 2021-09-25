@@ -26,3 +26,12 @@ https://flaviocopes.com/javascript-arrow-functions/
 
 Just a simple review.
 
+In a07 more methods for REPL node console (.help)
+
+.load <foo.js>
+
+for in and for of
+
+document.getElementById("id-name").innerHTML += n + "<br>" -> line where it is possible put items in "<p>" HTML element
+
+

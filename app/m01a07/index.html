@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <title>newDev() - m01a07</title>
+    <h1>Simple Math</h1>
+    <p id="product"></p>
+  </body>
+      <script>
+        function numberValid(number) {
+          if(Number.isNaN(number) == false && typeof(n) == 'number') {
+            for (let i = 0; i <= 10; i++) {
+              document.getElementById("product").innerHTML += n + "x" + i + " = " + n * i + "<br>"
+            }
+          }
+        }
+
+        var n = prompt('Insert a number')
+        n = parseFloat(n)
+        if(Number.isNaN(n) == true && typeof(n) == 'number') {
+          alert('Insert only numbers.')
+          while(Number.isNaN(n) == true && typeof(n) == 'number') {
+            n = prompt('Insert a number (Ex: 10, 2, 3.1415 and others).')
+            n = parseFloat(n)
+            if(Number.isNaN(n) == false && typeof(n) == 'number') {
+              numberValid(n)
+            }
+          }
+        }
+        else {
+          numberValid(n)
+        }
+      </script>
+</html>

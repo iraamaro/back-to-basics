@@ -12,8 +12,10 @@
     <div class="to-dos" id="actions" data-list></div>
     <form action="" class="container" id="form" data-new-list-form>
       <input type="text" id="input" data-new-list-input/>
-      <button id="add">Adicionar Item</button>
-      <button id="remove">Remover Item</button>
+      <div id="buttons">
+        <button id="add">Adicionar Item</button>
+        <input type="button" id="remove" value="Remover Item" onclick="removeItem()">
+      </div>
     </form>
     <script src="./script.js"></script>
   </body>

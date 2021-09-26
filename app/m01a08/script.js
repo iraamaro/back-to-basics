@@ -37,4 +37,10 @@ const createList = (listContent) => {
 
 const removeItem = () => {
   let itemToRemove = prompt("Insert the uuid of the item to remove")
+  if([null, ''].includes(itemToRemove) || [null, ''].includes(document.getElementById(itemToRemove))) {
+    return render()
+  }
+  else {
+    return document.getElementById(itemToRemove).remove()
+  }
 }

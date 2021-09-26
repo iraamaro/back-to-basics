@@ -5,9 +5,11 @@ var list = ["Pineapple", "Banana", "Lemon", "Melon"]
 const render = () => {
   list.forEach(element => {
     const item = document.createElement('p')
-    item.classList.add('item')
-    item.innerText = `${crypto.randomUUID()} - ${element}`
+    let id = crypto.randomUUID()
+    item.id = id
+    item.innerText = `${id} - ${element}`
     listCollection.appendChild(item)
+    id = null
   })
   list = []
 }

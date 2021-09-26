@@ -34,4 +34,7 @@ for in and for of
 
 document.getElementById("id-name").innerHTML += n + "<br>" -> line where it is possible put items in "<p>" HTML element
 
+See the m01a07f02_iteration_object.js with the object iteration
+
+
 

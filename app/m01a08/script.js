@@ -20,6 +20,7 @@ getForm.addEventListener('submit', (e) => {
 const render = () => {
   list.forEach(element => {
     const item = document.createElement('p')
+    item.id = element.id
     item.innerText = `${element.id} - ${element.data}`
     listCollection.appendChild(item)
     list = []
@@ -32,4 +33,14 @@ const createList = (listContent) => {
     data: listContent
   }
   return contentObject
+}
+
+const removeItem = () => {
+  let itemToRemove = prompt("Insert the uuid of the item to remove")
+  if([null, ''].includes(itemToRemove) || [null, ''].includes(document.getElementById(itemToRemove))) {
+    return render()
+  }
+  else {
+    return document.getElementById(itemToRemove).remove()
+  }
 }

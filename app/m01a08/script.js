@@ -1,4 +1,4 @@
-// catch the gost div below <h1>
+// catch the ghost div below <h1>
 const listCollection = document.querySelector('[data-list]')
 
 const getForm =  document.querySelector('[data-new-list-form]')
